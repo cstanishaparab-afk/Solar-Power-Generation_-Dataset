@@ -35,7 +35,7 @@ avg_pressure_period = st.sidebar.number_input("Average Barometric Pressure (Peri
 
 # Categorical feature (LabelEncoder classes)
 st.sidebar.subheader("Encoded Feature Input")
-categories = list(encoder.classes_)
+categories = list(encoder.keys())
 category_value = st.sidebar.selectbox("Select Category", categories)
 
 encoded_value = encoder.transform([category_value])[0]
