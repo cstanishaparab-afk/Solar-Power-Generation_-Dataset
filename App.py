@@ -38,7 +38,8 @@ st.sidebar.subheader("Encoded Feature Input")
 categories = list(encoder.keys())
 category_value = st.sidebar.selectbox("Select Category", categories)
 
-encoded_value = encoder.transform([category_value])[0]
+encoded_value = encoder[category_value]
+
 
 # Input DataFrame (order matters)
 input_data = pd.DataFrame({
