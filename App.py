@@ -4,7 +4,7 @@ import numpy as np
 import joblib
 
 # Load model + label encoder
-model = joblib.load("power_generation_model.pkl")
+model = joblib.load("power_prediction_model.pkl")
 encoder = joblib.load("label_encoder.pkl")
 
 st.set_page_config(page_title="Solar Power Prediction", layout="centered")
