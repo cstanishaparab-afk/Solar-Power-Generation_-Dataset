@@ -65,6 +65,6 @@ st.write("### 🔍 Input Data")
 st.dataframe(input_data)
 
 if st.button("⚡ Predict Power Generated"):
-    prediction = model.predict(input_data.values)
-    st.success(f"✅ Predicted Power Generated: **{prediction[0]:.2f}**")
+prediction = model.predict(input_data.values)
+st.success(f"✅ Predicted Power Generated: **{prediction[0]:.2f}**")
 
